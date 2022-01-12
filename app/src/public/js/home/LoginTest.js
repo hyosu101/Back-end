@@ -11,7 +11,14 @@ function login() {
       id: id.value,
       pw: pw.value,
     };
-    
+
+    fetch("/login", {
+        method: "POST",
+        headers: {
+            "Content-Type" : "applicaton/json"
+        },
+        body : JSON.stringify(req)
+    });
 }
 
 /* (btn).on('click', function(){
