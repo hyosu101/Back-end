@@ -2,18 +2,22 @@
 
 
 const id = document.querySelector("#id"),
+    name = document.querySelector("#name"),
     pw = document.querySelector("#pw"),
-    btn = document.querySelector("#button");
+    confirmPw = document.querySelector("#confirm-pw"),
+    rbtn = document.querySelector("#button");
 
-btn.addEventListener("click", login);
+rbtn.addEventListener("click", reigster);
 
-function login() {
+function reigster() {
     const req = {
     id : id.value,
+    name : name.value,
     pw : pw.value,
+    confirmPw : confirmPw.value,
     };
 
-    fetch("/login", {
+    fetch("/reigster", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -29,6 +33,6 @@ function login() {
         }
     })
     .catch((err) => {
-        console.error("로그인 중 에러 발생");
+        console.error("회원가입 중 에러 발생");
     });
 }
