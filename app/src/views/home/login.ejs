@@ -1,34 +1,27 @@
+<!-- Copyright (c) 2022 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/LoginTest.css">
     <script src="/js/home/LoginTest.js" defer></script>
     <title>건국대학교 건축대학</title>
 </head>
 <body>
-    <div class="login_form">
-        <section class="main_point_bg">
-            <h1>포인트 정보 확인</h1>
-            <form action="">
-                <div class="int-area">
-                    <input id="id" type="text" name="id" autocomplete="off" required />
-                    <label for="id">이름</label>
-                </div>
-                <div class="int-area">
-                    <input id="pw" type="password" name="pw" autocomplete="off" required />
-                    <label for="pw">학번</label>
-                </div>
-                <div class="btn-area">
-                    <button id="btn" type="button">LOGIN</button>
-                </div>
-            </form>
-            <div class="close_btn_area">
-                <div class="close_btn">close</div>
-            </div>
-        </section>
-    </div>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <input id="id" type="text" placeholder="아이디"/>
+            <input id="pw" type="password" placeholder="비밀번호"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="/register">Create an account</a></p>
+          </form>
+        </div>
+      </div>
 </body>
 </html>
+
 
