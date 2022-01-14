@@ -7,8 +7,6 @@ dotenv.config();
 
 const app = express();
 
-const PORT = 3000;
-
 // 라우팅
 const home = require("./src/routes/home");
 
