@@ -17,7 +17,6 @@ class User {
                 }
                 return { success: false, msg: "비밀번호가 틀렸습니다." };
             }
-            return { success: false, msg: "존재하지 않는 아이디입니다." };
         } catch (err) {
             return { success: false, msg: "잘못 입력하셨습니다." };
         }
